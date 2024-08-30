@@ -3,24 +3,24 @@ services:
   movies:
     image: subhojit840/movies:latest
     ports:
-      - "81:80"
+      - "91:80"
     deploy:
       replicas: 3
   train:
     image: subhojit840/dth:latest
     ports:
-      - "82:80"
+      - "92:80"
     deploy:
       replicas: 3
   recharge:
     image: subhojit840/recharge:latest
     ports:
-      - "83:80"
+      - "93:80"
     deploy:
       replicas: 3
   dth:
     image: subhojit840/payment:latest
     ports:
-      - "84:80"
+      - "94:80"
     deploy:
       replicas: 3
